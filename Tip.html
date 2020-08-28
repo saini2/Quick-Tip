@@ -1,0 +1,51 @@
+!
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quick Tip</title>
+    <link rel='stylesheet' href="./style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="outer" oninput="update()" id = 'container'>
+        <h3>Quick Tip</h3>
+        <div class="top">
+            <div class="simple">
+                <span>Bill</span>
+                <input class="money" type="number" id="money"  placeholder="Your bill" />
+            </div>
+            <div class="simple">
+                <span>Select tip</span>
+                <span id='demo'></span>
+            </div>
+            <input type="range" min="1%" max="100%" value="0" class="slider" id="myRange" >
+            <div class="tip">
+                <span>Tip</span>
+                <span id='tipno'></span>
+            </div>
+            <div class="simple2">
+                <span>Total</span>
+                <span id='total'></span> 
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="simple">
+                <span>Split</span>
+                <span><span id='people'></span> person</span>
+            </div>
+            <input type="range" min="1" max="10" value="2" class="slider" id="myRange2" >
+            <div class="simple"><span>Bill each</span>
+                <span id='billeach'></span></div>
+            <div class="simple2">
+                <span>Tip each</span>
+                <span id='tipeach'></span>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+
+</html>
